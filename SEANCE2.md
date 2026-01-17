@@ -202,3 +202,7 @@ Insister sur :
 ### Mini-évaluation
 
 Corriger un `if` volontairement faux (erreur logique, pas syntaxique).
+
+### Excercices
+- https://www.codewars.com/kata/514b92a657cdc65150000006/train/javascript
+- https://www.codewars.com/kata/5300901726d12b80e8000498/train/javascript
