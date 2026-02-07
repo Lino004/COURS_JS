@@ -1,0 +1,13 @@
+.field {
+  display: flex;
+  flex-direction: column;
+}
+.field input {
+  width: 200px;
+}
+
+.btn {
+  margin-top: 10px;
+  color: black;
+  background-color: beige;
+}
