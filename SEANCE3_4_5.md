@@ -781,7 +781,7 @@ console.log(division(20, 4));      // Attendu : 5
 console.log(division(10, 0));      // Attendu : message d'erreur
 ```
 
-<details>
+<!-- <details>
 <summary>Solution</summary>
 
 ```javascript
@@ -804,7 +804,7 @@ function division(a, b) {
   return a / b;
 }
 ```
-</details>
+</details> -->
 
 ---
 
@@ -840,7 +840,7 @@ console.log(estMajeur(16));  // Attendu : false
 console.log(estMajeur(18));  // Attendu : true
 ```
 
-<details>
+<!-- <details>
 <summary>Solution</summary>
 
 ```javascript
@@ -860,7 +860,7 @@ if (estMajeur(ageUtilisateur)) {
   console.log("Accès refusé - vous devez être majeur");
 }
 ```
-</details>
+</details> -->
 
 ---
 
@@ -905,7 +905,7 @@ console.log("Moins bonne note :", trouverMin(notes));
 console.log("Nombre de réussites :", compterReussites(notes));
 ```
 
-<details>
+<!-- <details>
 <summary>Solution</summary>
 
 ```javascript
@@ -943,7 +943,7 @@ console.log("Moins bonne note :", trouverMin(notes)); // 8
 console.log("Nombre de réussites :", compterReussites(notes)); // 7
 console.log("Mention :", obtenirMention(calculerMoyenne(notes))); // Bien
 ```
-</details>
+</details> -->
 
 ---
 
@@ -993,7 +993,7 @@ anniversaire(utilisateur);
 console.log(utilisateur.age); // 26
 ```
 
-<details>
+<!-- <details>
 <summary>Solution</summary>
 
 ```javascript
@@ -1031,7 +1031,7 @@ console.log(utilisateur.age); // 26
 ajouterVille(utilisateur, "Paris");
 console.log(utilisateur.ville); // "Paris"
 ```
-</details>
+</details> -->
 
 ---
 
@@ -1078,7 +1078,7 @@ function mettreAJour() {
 // Votre code ici
 ```
 
-<details>
+<!-- <details>
 <summary>Solution</summary>
 
 ```javascript
@@ -1108,7 +1108,7 @@ btnReset.addEventListener("click", function() {
   mettreAJour();
 });
 ```
-</details>
+</details> -->
 
 ---
 
@@ -1173,7 +1173,7 @@ formulaire.addEventListener("submit", function(event) {
 });
 ```
 
-<details>
+<!-- <details>
 <summary>Solution</summary>
 
 ```javascript
@@ -1208,7 +1208,7 @@ formulaire.addEventListener("submit", function(event) {
   formulaire.reset();
 });
 ```
-</details>
+</details> -->
 
 ---
 
@@ -1237,13 +1237,13 @@ console.log(mystere([3, 7, 2, 9, 5]));
 2. Quel est le rôle de cette fonction ?
 3. Que se passe-t-il si le tableau est vide ?
 
-<details>
+<!-- <details>
 <summary>Réponses</summary>
 
 1. La fonction retourne `9`
 2. Elle trouve et retourne la valeur maximale du tableau
 3. Si le tableau est vide, la fonction retourne `0` (la valeur initiale de `resultat`)
-</details>
+</details> -->
 
 ---
 
@@ -1251,7 +1251,7 @@ console.log(mystere([3, 7, 2, 9, 5]));
 
 **Question :** Expliquez la différence concrète entre un tableau et un objet. Donnez un exemple pour chacun.
 
-<details>
+<!-- <details>
 <summary>Réponse attendue</summary>
 
 **Tableau :**
@@ -1277,7 +1277,7 @@ let contact = {
 };
 console.log(contact.nom); // "Dupont"
 ```
-</details>
+</details> -->
 
 ---
 
@@ -1300,7 +1300,7 @@ bouton.addEventListener("click", function() {
 2. L'événement écouté
 3. L'action déclenchée
 
-<details>
+<!-- <details>
 <summary>Réponses</summary>
 
 1. **Élément sélectionné :** Un élément avec l'id "valider" (probablement un bouton)
@@ -1309,7 +1309,7 @@ bouton.addEventListener("click", function() {
    - Sélection d'un élément avec l'id "message"
    - Modification de son contenu texte en "Formulaire validé !"
    - Changement de la couleur du texte en vert
-</details>
+</details> -->
 
 ---
 

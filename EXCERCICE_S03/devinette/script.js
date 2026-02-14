@@ -6,18 +6,24 @@ function getRandomIntInclusive(min, max) {
 const nombreADeviner = getRandomIntInclusive(0, 100);
 const input = document.querySelector('input#nbre_saisie');
 const resultat = document.querySelector('p#resultat');
+const resultatList = [];
 
 function onClickBtn() {
   let saisie = input.value;
   if (!saisie || isNaN(saisie)) {
-    resultat.innerText = "Veuillez entrer un nombre valide.";
+    resultatList.push("Veuillez entrer un nombre valide.");
+    // resultat.innerText = "Veuillez entrer un nombre valide.";
     return;
   }
   if (saisie < nombreADeviner) {
-    resultat.innerText = "Le nombre à deviner est plus grand que  " + saisie;
+    resultatList.push("Le nombre à deviner est plus grand que  " + saisie);
+    // resultat.innerText = "Le nombre à deviner est plus grand que  " + saisie;
   } else if (saisie > nombreADeviner) {
-    resultat.innerText = "Le nombre à deviner est plus petit " + saisie;
+    resultatList.push("Le nombre à deviner est plus petit " + saisie);
+    // resultat.innerText = "Le nombre à deviner est plus petit " + saisie;
   } else {
-    resultat.innerText = "Super vous avez gagné. Le nombre est:  " + nombreADeviner;
+    resultatList.push("Super vous avez gagné. Le nombre est:  " + nombreADeviner);
+    // resultat.innerText = "Super vous avez gagné. Le nombre est:  " + nombreADeviner;
   }
+  resultat.innerHTML = "<ul>" + resultatList.map(item => `<li>${item}</li>`).join("") + "</ul>";
 }
