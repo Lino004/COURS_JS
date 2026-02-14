@@ -3,10 +3,10 @@ function getRandomIntInclusive(min, max) {
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-const nombreADeviner = getRandomIntInclusive(0, 100);
+let nombreADeviner = getRandomIntInclusive(0, 100);
 const input = document.querySelector('input#nbre_saisie');
 const resultat = document.querySelector('p#resultat');
-const resultatList = [];
+let resultatList = [];
 
 function onClickBtn() {
   let saisie = input.value;
@@ -26,4 +26,12 @@ function onClickBtn() {
     // resultat.innerText = "Super vous avez gagné. Le nombre est:  " + nombreADeviner;
   }
   resultat.innerHTML = "<ul>" + resultatList.map(item => `<li>${item}</li>`).join("") + "</ul>";
+}
+
+function onClickBtnReset() {
+  nombreADeviner = getRandomIntInclusive(0, 100);
+  input.value = "";
+  resultatList = [];
+  resultat.innerText = "";
+  resultat.innerHTML = "";
 }
